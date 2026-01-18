@@ -1,95 +1,99 @@
-# Práctica 4.1: Progr4amación orientada a objetos
+# Título de la Actividad: Programación Orientada a Objetos (POO)
 
-Apóyate en los siguientes recursos para realizar la práctica:
+## Identificación de la Actividad
+- **ID de la Actividad:** 4.1 POO
+- **Módulo:** Programación
+- **Unidad de Trabajo:** Unidad 4 - Introducción a la Programación Orientada a Objetos
+- **Fecha de Creación:** 18-01
+- **Fecha de Entrega:** 19-01
 
-[U4: 1. POO](./EjerciciosSencillosPOO.md)
-
-> ATENCIÓN: DURANTE LA DOCUMENTACIÓN DE LA PRÁCTICA, ELIMINA TODO AQUELLO QUE NO APLIQUE. PEEEEEEEROOOOOOO, ANTES DE ELIMINAR ALGO, PIENSA SI APLICA O NO.
+## Alumno(s)
+- **Nombre y Apellidos:** Antonio Manuel Pérez Gómez
+- **Correo electrónico:** apergom459w@g.educaand.es
+- **Iniciales del Alumno/Grupo:** AMPG
 
 ---
 
-# Título de la Actividad
-
-## Identificación de la Actividad
-
-- **ID de la Actividad:** [ID de la actividad]
-- **Módulo:** [Nombre del módulo] (`PROG`, `IS`, `EDES`, etc.)
-- **Unidad de Trabajo:** [Número y nombre de la unidad de trabajo]
-- **Fecha de Creación:** [Fecha de creación]
-- **Fecha de Entrega:** [Fecha de entrega]
-- **Alumno(s):**
-  - **Nombre y Apellidos:** [Nombre y Apellidos del alumno o integrantes del grupo]
-  - **Correo electrónico:** [Correo electrónico g.educaand.es]
-  - **Iniciales del Alumno/Grupo:** [Iniciales del alumno o del grupo]
-
 ## Descripción de la Actividad
+Esta actividad tiene como objetivo desarrollar una serie de ejercicios prácticos para introducir los conceptos básicos de la programación orientada a objetos. A través de estas actividades, los estudiantes aprenderán a crear clases, aplicar encapsulación, usar herencia y polimorfismo, y gestionar excepciones en programas sencillos.
 
-[Descripción detallada de la actividad, objetivos, y contexto necesario para comprenderla. Explicar en qué consiste la actividad y qué se espera que el alumno desarrolle o implemente.]
+### Objetivos:
+1. Comprender los principios fundamentales de la POO.
+2. Aplicar diseño de clases y métodos en un entorno realista.
+3. Implementar y probar módulos que reflejen problemas cotidianos.
+
+### Lista de Ejercicios
+Los ejercicios desarrollados incluyen:
+1. **Clase Cuenta Bancaria:** Gestión de saldos con validaciones.
+2. **Clase Vehículo:** Registro de kilómetros y detalles del vehículo.
+3. **Clase Libro:** Almacenamiento y visualización de datos de libros y control de excepciones.
+4. **Clase Estudiante:** Validación de notas y uso del modificador `toString`.
+5. **Clase Producto:** Gestión de inventarios con validaciones para atributos.
+
+---
 
 ## Instrucciones de Compilación y Ejecución
 
-1. **Requisitos Previos:**
+### Requisitos Previos
+- **Lenguaje:** Kotlin (versión [versión recomendada])
+- **Entorno de desarrollo:** Intellij IDEA u otro IDE compatible.
+- **Dependencias:** Ninguna adicional.
 
-   - [Lenguaje de programación y versión]
-   - [Entorno de desarrollo o dependencias necesarias]
-2. **Pasos para Compilar el Código:**
+### Compilación del Proyecto
+Para compilar el proyecto, ejecuta el siguiente comando en el terminal:
+```bash
+kotlinc src -include-runtime -d programa.jar
+```
 
-   ```bash
-   [Comando para compilar el código]
-   ```
-3. **Pasos para Ejecutar el Código:**
+### Ejecución del Programa
+Ejecuta el archivo generado con el comando:
+```bash
+java -jar programa.jar
+```
 
-   ```bash
-   [Comando para ejecutar la aplicación]
-   ```
-4. **Ejecución de Pruebas:**
+### Ejecución de Pruebas
+Si hay pruebas incluidas, usa el siguiente comando como referencia:
+```bash
+./gradlew test
+```
 
-   ```bash
-   [Comandos para ejecutar pruebas, si las hubiera]
-   ```
+---
 
 ## Desarrollo de la Actividad
 
 ### Descripción del Desarrollo
+Cada ejercicio se ha implementado como una clase independiente con métodos y atributos específicos. Se han aplicado principios de encapsulación, validación de datos y gestión de excepciones según los requerimientos de los ejercicios mencionados.
 
-[Explicación de cómo se ha abordado el desarrollo de la actividad, incluyendo las decisiones de diseño, estructura del código y enfoque de resolución de problemas. Se recomienda adjuntar diagramas o capturas de pantalla si es necesario.]
+- **Enlace a la documentación de ejercicios:**
+  - [Ejercicio 1 - Clase Cuenta Bancaria](./EjerciciosSencillosPOO.md#L5-L24)
+  - [Ejercicio 2 - Clase Vehículo](./EjerciciosSencillosPOO.md#L54-L69)
+  - [Ejercicio 3 - Clase Libro](./EjerciciosSencillosPOO.md#L93-L112)
+  - [Ejercicio 4 - Clase Estudiante](./EjerciciosSencillosPOO.md#L167-L179)
+  - [Ejercicio 5 - Clase Producto](./EjerciciosSencillosPOO.md#L187-L204)
 
-### Código Fuente
+---
 
-[Aquí se incluirá un enlace directo a los archivos de código fuente en el repositorio, por ejemplo, si se está usando GitHub: `src/main.kt` o algún enlace directo.]
+## Ejemplos de Ejecución
 
-[Si hay varios ejercicios, habrá una documentación, por cada uno de los ejercicios.]
-[Por cada ejercicio, habrá enlaces embebidos de código a las clases principales y programa principal `main` ]
+### Entrada 1
+**Ejemplo:** Creación de un libro.
+```text
+Título del libro: "Programar es divertido"
+Autor: "Juan Pérez"
+Número de páginas: 300
+```
 
-### Ejemplos de Ejecución
+### Salida Esperada 1
+**Resultado:**
+```text
+Libro: Programar es divertido por Juan Pérez, Páginas: 300, Leído: No
+```
 
-- **Entrada 1:** Descripción de la entrada y valor de prueba.
-- **Salida Esperada 1:** Explicación de la salida esperada y el resultado de la prueba.
-
-### Resultados de Pruebas
-
-[Aquí se detallará cómo se ha verificado la funcionalidad del código, incluyendo resultados de pruebas automatizadas o manuales, en caso de que las haya.]
-
-## Documentación Adicional
-
-- **Manual de Usuario:** [Enlace a la documentación del usuario, si existe]
-- **Autorización de Permisos:** Verificar que el profesor tenga permisos de lectura en el repositorio para revisar el código.
-
-## Conclusiones
-
-[Resumen de las conclusiones alcanzadas al desarrollar la actividad, las lecciones aprendidas, y posibles mejoras que se puedan implementar en futuras entregas.]
+---
 
 ## Referencias y Fuentes
+- [Documentación oficial de Kotlin](https://kotlinlang.org/docs/home.html)
+- Recursos suplementarios utilizados durante la actividad.
 
-[Aquí se listarán las fuentes consultadas para el desarrollo de la actividad, tales como documentación oficial, artículos, o cualquier recurso externo relevante.]
-
-### Notas Adicionales:
-
-1. **Nombres de Archivos y Repositorios:**
-   - Asegúrate de que el nombre del archivo o repositorio siga la estructura definida: `XXX-idActividad-Iniciales`.
-2. **Permisos:**
-   - Verifica que el profesor tenga los permisos necesarios para acceder al repositorio o documento.
-3. **Formato:**
-   - Si se entrega en formato PDF o Google Docs, asegúrate de cumplir con el mínimo y máximo de folios establecidos.
-4. **Compilación y Ejecución:**
-   - Detalla claramente cómo compilar y ejecutar el código, incluyendo las instrucciones en el archivo `README.md`.
+## Conclusiones
+El desarrollo de los ejercicios ha permitido afianzar conocimientos sobre la programación orientada a objetos, poniendo en práctica conceptos como encapsulación y validación. Estas destrezas tienen aplicaciones directas al resolver problemas de la vida real dentro del ámbito tecnológico.
